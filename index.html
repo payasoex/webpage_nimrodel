@@ -20,8 +20,8 @@
                 <ul>
                     <li><a href="#">Nuestros Productos</a></li>
                     <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Comuniquemonos</a></li>
-                    <li><a href="#">Reserva</a></li>
+                    <li><a href="#comuniquemonos">Comuniquemonos</a></li>
+                    <li><a href="#Reserva">Reserva</a></li>
                 </ul>
             </nav>
             <h1>Nimrodel Pub Restaurant</h1>
@@ -38,6 +38,39 @@
                 <img src="./assets/img/shop.png" alt="Pintas de cerveza con algo de espuma">
                 <h3>Shop Cerveza</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptas suscipit totam, praesentium quasi et dolores harum possimus quo ab iure consequuntur repellendus in quas iusto incidunt minima nisi vitae?</p>
+            </section>
+            <section>
+                <h2 id="comuniquemonos">Comuniquemonos</h2>
+                <form action="" method="get" >
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Juan Perez" required><br><br>
+                    <label for="email">Correo</label>
+                    <input type="email" name="email" id="email" placeholder="hola@mundo.com" pattern="^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$" required><br><br>
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" name="telefono" id="telefono" placeholder="912345678" pattern="^[0-9]{9}$" required><br><br>
+                    <label for="motivo">Motivo</label>
+                    <input type="text" name="motivo" id="motivo" pattern="[a-zA-Z ]{2,254}" required><br><br>
+                    <textarea name="asunto" id="asunto" cols="30" rows="10" placeholder="En que te podemos ayudar?" required></textarea><br><br>
+                    <input type="submit">
+                </form>
+            </section>
+            <section>
+                <h2 id="Reserva">Reserva</h2>
+                <form action="" method="get">
+                    <label for="nombre_reserva">Nombre</label>
+                    <input type="text" name="nombre_reserva" id="nombre_reserva" placeholder="xxxx xxxxx" required><br><br>
+                    <label for="email_reserva">Correo</label>
+                    <input type="email" name="email_reserva" id="email_reserva" placeholder="xxxx@xxxx.xxx" pattern="^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$" required><br><br>
+                    <label for="telefono_reserva">Teléfono</label>
+                    <input type="text" name="telefono_reserva" id="telefono_reserva" placeholder="xxxxxxxxx" pattern="^[0-9]{9}$" required><br><br>
+                    <label for="fecha_reserva">Fecha</label>
+                    <input type="date" name="fecha_reserva" id="fecha_reserva"><br><br>
+                    <label for="hora_reserva">Hora</label>
+                    <input type="time" name="hora_reserva" id="hora_reserva"><br><br>
+                    <label for="asistentes_reserva">Cantidad de asistentes</label>
+                    <input type="number" pattern="^[0-9]*$" name="asistentes" id="asistentes_reserva" value="1"><br><br>
+                    <input type="submit">
+                </form>
             </section>
             <footer>
                 <p>Todos los derechos reservados <i class="fa-regular fa-registered"></i></p>
