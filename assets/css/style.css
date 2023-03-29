@@ -1,19 +1,68 @@
 body {
-    font-family: 'Karla', sans-serif;
-    text-align: justify;
+    margin: 0 auto;
 }
 
 header {
     align-self: flex-start;
 }
 
+ul {
+    display: flex;
+    text-decoration: none;
+}
 
+ul li {
+    padding: 10px;
+}
+
+h1 {
+    color: gray;
+}
+
+h3, p {
+    text-align: center;
+}
+
+form {
+    background-color: #070707;
+}
 
 .container {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    width: 60%;
+    background-color: black;
+    padding: 20px;
+}
+
+.logo {
+    width: 60px;
+}
+
+.destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productos {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    
+}
+
+.destacados-producto{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 200px;
+}
+
+.destacados-producto-img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover ;
 }
