@@ -124,12 +124,10 @@ footer {
         align-items: flex-start;
         justify-content: flex-start;
         width: 100%;
-        border: 1px solid white;
     }
 
     ul {
         flex-direction: column;
-        border: 1px solid white;
     }
 
     .productos {
