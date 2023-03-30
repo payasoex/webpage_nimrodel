@@ -28,16 +28,16 @@
                     <a class="nav-item nav-link active" href="#">Nuestros Productos <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="#">Sobre Nosotros</a>
                     <a class="nav-item nav-link" href="#comuniquemonos">Comuniquemonos</a>
-                    <a class="nav-item nav-link" href="#reservas">Reserva</a>
+                    <a class="nav-item nav-link" href="#reserva">Reserva</a>
                   </div>
                 </div>
             </nav>
         </header>
         <main>
-            <h1>Nimrodel Pub Restaurant</h1>
-            <section class="destacados">
+            <section id="destacados" class="d-flex flex-column justify-content-center align-items-center">
+                <h1>Nimrodel Pub Restaurant</h1>
                 <h2>Desacados de la semana</h2>
-                <div class="card-deck">
+                <div class="card-deck row-cols-md-2">
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top" style="height: 65%;" src="./assets/img/bebidas.png" alt="bebidas surtidas">
                         <div class="card-body">
@@ -61,8 +61,8 @@
                     </div>
                 </div>
             </section>
-            <section id="comuniquemonos">
-                <form action="" method="get" >
+            <section id="comuniquemonos" class="container-fluid d-flex justify-content-center">
+                <form action="" method="get" class="d-none d-sm-block">
                     <h2>Comuniquemonos</h2>
                     <label for="nombre">Nombre</label>
                     <input type="text" name="nombre" id="nombre" placeholder="Juan Perez" required><br><br>
@@ -76,8 +76,8 @@
                     <input type="submit">
                 </form>
             </section>
-            <section id="reserva">
-                <form action="" method="get">
+            <section id="reserva" class="container d-flex justify-content-center">
+                <form action="" method="get" class="d-none d-sm-block">
                     <h2>Reserva</h2>
                     <label for="nombre_reserva">Nombre</label>
                     <input type="text" name="nombre_reserva" id="nombre_reserva" placeholder="xxxx xxxxx" required><br><br>
@@ -94,7 +94,7 @@
                     <input type="submit">
                 </form>
             </section>
-            <footer>
+            <footer class="d-flex justify-content-center">
                 <p>Todos los derechos reservados <i class="fa-regular fa-registered"></i></p>
             </footer>
         </main>
